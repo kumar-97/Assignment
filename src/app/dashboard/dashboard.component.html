@@ -1,0 +1,323 @@
+<!-- 
+<div class="container-fluid">
+   <div style="background-color: aqua;">
+        <div class="mainContent">
+            <div class="sectionHeader">
+                <p class="h1 sectionLeft"> Our collections</p>
+
+            </div>
+
+        </div>
+   </div>
+
+</div> -->
+
+<!-- <div class="container">
+            <div class="jumbotron jumbotron_style">
+                <h1>Hello  here is Our Collections </h1>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 " style="padding-bottom: 7px;">
+                    <div class="thumbnail">
+                        <img src="assets/img/camera.jpg" alt="Nikon">
+                        <div class="caption">
+                            <h3>Picture1</h3>
+                            <p>Price :50000</p>
+                            <button class="add-to-cart">Edit Price</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 "  style="padding-bottom: 7px;">
+                    <div class="thumbnail">
+                        <img src="assets/img/camera2.jpg" alt="Sony">
+                        <div class="caption">
+                            <h3>Picture2</h3>
+                            <p>Price :50000</p>
+                            <button class="add-to-cart">Edit Price</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6  "  style="padding-bottom: 7px;">
+                    <div class="thumbnail">
+                        <img src="assets/img/camera3.jpg" alt="cannon">
+                        <div class="caption">
+                            <h3>Picture3</h3>
+                            <p>Price :6000000</p>
+                            <button class="add-to-cart">Edit Price</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 "  style="padding-bottom: 7px;">
+                    <div class="thumbnail">
+                        <img src="assets/img/camera4.jpg" alt="Panasonic">
+                        <div class="caption">
+                            <h3>Picture 4</h3>
+                            <p>Price :1800000</p>
+                            <button type="button" class="btn btn-primary" (click)="checkIt()" >Edit Price</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="padding-20"></div>
+        </div>
+    
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    <footer>
+        <div class="container">
+            
+               Welcome to tech world
+            
+        </div>
+    </footer> -->
+<!-- //bread crumb -->
+
+<nav>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/">home</a></li>
+        <li class="breadcrumb-item active">Dashboard</li>
+
+    </ol>
+</nav>
+<h5>Dashboard</h5>
+<div class="row">
+    <div class="col-lg-3 " style="background-color: #e9e6e6;">
+        <div class="row">
+            <div class="col-11 text-white text-center mx-auto rounded pt-2 font-weight-bold "
+                style="background-color: #a39e9e; font-family: 'Arial Narrow Bold', sans-serif;">
+                {{Designation}}
+            </div>
+            <div class="col-12 text-center mt-2">
+                <img src="assets/img/user.jpg" width="120px">
+            </div>
+            <div class="col-12 text-center pt-2 pb-2 font-weight-bold" style="font-family: Tahoma;">{{Username}}</div>
+            <div class="col-12 pt-2 pb-2 text-center" style="font-family: Arial;">Team Summary</div>
+            <div class="col-12 mb-3">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        No of team Members
+                        <span class="badge badge-secondary badge-pill"
+                            style="font-size: 13px;">{{NoOfTeamMembers}}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Total cost of All projetcs
+                        <span class="badge badge-secondary badge-pill"
+                            style="font-size: 13px;">Rs{{TotalCostsOfAllProjects}}k</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Pending Task
+                        <span class="badge badge-secondary badge-pill"
+                            style="font-size: 13px;">Rs{{TotalCostsOfAllProjects}}k</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Upcoming Projects
+                        <span class="badge badge-secondary badge-pill"
+                            style="font-size: 13px;">Rs{{TotalCostsOfAllProjects}}k</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 pt-2 pb-2 text-center" style="font-family: Arial, Helvetica, sans-serif;">Clients</div>
+            <div class="col-12 mb-3">
+                <ul class="list-group">
+                    <li class="list-group-item">xyz tech</li>
+                    <li class="list-group-item">geography tech</li>
+                    <li class="list-group-item">samhiyat tech</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="row">
+            <div class="col-12" style="background-color: #e9e6e6;">
+                <div class="row mt-2 mb-2">
+                    <div class="col-6 text-left">
+                        <!-- <div class="nav-item dropdown ">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" >Project A</button>
+                            <div class="dropdown-menu ngbDropdownMenu">
+                                <a class="dropdown-item"   href='target="_self"' >Project A</a>
+                                <a class="dropdown-item"   href="#" >Project B</a>
+                                <a class="dropdown-item"   href="#" >Project C</a>
+                            </div>
+                        </div> -->
+                        <div ngbDropdown class="d-inline-block">
+                            <button class="btn btn-secondary " id="dropdownMenuButton"
+                                ngbDropdownToggle>Projects</button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" href='target="_self"'>Project A</button>
+                                <button ngbDropdownItem href='target="_self"'>Project B</button>
+                                <button ngbDropdownItem href='target="_self"'>Project C</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 text-right">
+                        <div ngbDropdown class="d-inline-block">
+                            <button class="btn btn-secondary " id="dropdownMenuButton" ngbDropdownToggle>2019</button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+                                <button class="dropdown-item" href='target="_self"'>2020</button>
+                                <button ngbDropdownItem href='target="_self"'>2021</button>
+                                <button ngbDropdownItem href='target="_self"'>2022</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 mx-auto mt-1 text-white text-center pt-2 pb-2 rounded font-weight-bold"
+                style="background-color: #718d97;"> Project Briefing</div>
+            <div class="col-12">
+                <table class="table table-borderless">
+                    <tr>
+                        <td>Project Cost </td>
+                        <td>{{ProjectCost}}</td>
+                    </tr>
+                    <tr>
+                        <td>Current Expenditure </td>
+                        <td>{{CurrentExpenditure}}</td>
+                    </tr>
+                    <tr>
+                        <td>Available FUnds </td>
+                        <td>{{AvailableFUnds}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-11 mx-auto mt-1 text-center text-white rounded font-weight-bold"
+                style="background-color: #718d97;">
+                Team Member Summary
+            </div>
+            <div class="col-12">
+                <table class="table ">
+                    <tr>
+                        <th>Region</th>
+                        <th>Team members Count</th>
+                        <th>Team member Unavailable</th>
+                    </tr>
+                    <tr>
+                        <td> <b>East</b> </td>
+                        <td>05</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td> <b>West</b> </td>
+                        <td>03</td>
+                        <td>09</td>
+                    </tr>
+                    <tr>
+                        <td> <b>South</b> </td>
+                        <td>04</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td> <b>North</b> </td>
+                        <td>06</td>
+                        <td>05</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 " style="background-color: #e9e6e6;">
+        <div class="row">
+            <div class="col-11 text-white text-center mx-auto rounded font-weight-bold"
+                style="background-color:#718d97 ; font-family: Arial Narrow;">
+                Team Members
+            </div>
+            <div class="col-lg-12 pt-2">
+                <div class="accordion" id="accordion1">
+                    <!-- east starts -->
+                    <div class="card">
+                        <div class="card-header bg-secondary" id="card1">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-white" type="button" data-toggle="collapse"
+                                    data-target="#cardbody1">
+                                    East
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="cardbody1" class="collapse show" data-parent="#accordion1">
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Ford</td>
+                                            <td><i class="fa fa-phone"></i> Available</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Miller</td>
+                                            <td><i class="fa fa-phone"></i> Available</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Jones</td>
+                                            <td><i class="fa fa-user-times"></i> Busy</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>James</td>
+                                            <td><i class="fa fa-user-times"></i> Busy</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- north card starts -->
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link text-white" type="button" data-toggle="collapse"
+                                    data-target="#cardbody2">
+                                North</button>
+                            </h2>
+                        </div>
+                        <div id="cardbody2" class="collapse" data-parent="#accordion1">
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Id </th>
+                                            <th>Namee</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>1</td>
+                                        <td>deep N</td>
+                                        <td><i class="fa fa-phone"></i> Available</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

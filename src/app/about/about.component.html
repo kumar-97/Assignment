@@ -1,0 +1,55 @@
+<div class="row mt-5">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+        Toggle dropdown
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <div *ngFor="let dt of data">
+          <!-- <button ngbDropdownItem>{{dt.name}}</button> -->
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>
+              {{dt.name}}
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+              <div *ngFor="let dt1 of dt.options |  keyvalue">
+                <!-- <button ngbDropdownItem>{{dt1.value.name}}</button> -->
+                <!-- afeer fem -->
+                <div ngbDropdown class="d-inline-block">
+                  <button class="btn btn-outline-primary" id="dropdownBasic2" *ngIf="dt1.value.options else elsePart"
+                    ngbDropdownToggle>
+                    {{dt1.value.name}}
+                  </button>
+                  <ng-template #elsePart>
+                    <button ngbDropdownItem (click)="fakes(dt2)">{{dt1.value.name}}</button>
+
+                  </ng-template>
+                  <div ngbDropdownMenu *ngIf="dt1.value.options" aria-labelledby="dropdownBasic2">
+                    <div *ngFor="let dt2 of dt1.value.options |  keyvalue">
+                      <button ngbDropdownItem (click)="fakes(dt2)">{{dt2.value.name}}</button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+
+                <!--  -->
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>

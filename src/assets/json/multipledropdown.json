@@ -1,0 +1,60 @@
+[
+    {
+         "type": "level",
+         "options": {
+             "Jan'22": {
+                 "type": "option",
+                 "name": "Jan'22"
+             },
+             "Feb'22": {
+                 "type": "option",
+                 "name": "Feb'22"
+             }
+         },
+         "name": "data 1"
+     },
+      {
+         "type": "level",
+         "options": {
+             "Female": {
+                 "type": "level",
+                 "options": {
+                     "Jan'22": {
+                         "type": "option",
+                         "name": "Jan'22"
+                     },
+                     "Feb'22": {
+                         "type": "option",
+                         "name": "Feb'22"
+                     }
+                 },
+                 "name": "Female"
+             },
+             "Male": {
+                 "type": "level",
+                 "options": {
+                     "Jan'22": {
+                         "type": "level",
+                         "name": "Jan'22",
+                         "options": {
+                             "age1": {
+                                 "type": "option",
+                                 "name": "age1"
+                             },
+                             "age2": {
+                                 "type": "option",
+                                 "name": "age2"
+                             }
+                         }
+                     },
+                     "Feb'22": {
+                         "type": "option",
+                         "name": "Feb'22"
+                     }
+                 },
+                 "name": "Male"
+             }
+         },
+         "name": "data 2"
+     }
+ ]
